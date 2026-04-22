@@ -39273,3 +39273,4 @@ date,zone,price_change,baseline_price,actual_price,source,resolved_at,prediction
 2026-04-20,NO4,8.11,13.52,21.63,Nord Pool,2026-04-20 21:04:24,d8c48b59-3d38-4f35-8eea-ac36580058c3
 2026-04-20,NO4,11.07,10.22,21.29,Nord Pool,2026-04-20 04:20:50,82599eff-d80b-4466-b205-c24bb8bce742
 2026-04-20,NO4,5.11,10.22,15.33,Nord Pool,2026-04-20 22:08:36,df10ecad-5f15-47bf-9be0-f381c4efa11b
+2026-04-21,NO4,-10.1,18.7,8.6,Nord Pool,2026-04-21 14:46:30,a6f60229-9e89-4697-a4df-fada8479261f
