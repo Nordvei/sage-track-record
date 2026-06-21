@@ -1,0 +1,14 @@
+{
+  "schema": "ovl.issuer_keys.v1",
+  "note": "Public verification material for OVL issuer-signed receipts. The issuer signature attests ORIGIN only (a receipt signed by the holder of this issuer key); it is NOT non-repudiation, authorization, mandate-binding, legal admissibility, correctness, or tamper-proofing. The primary proof of every receipt is KEYLESS: recompute content_hash with ovl_verifier.py (stdlib only, no key needed). The signature is an additive origin/attributability layer, not the core guarantee.",
+  "kid_definition": "sha256(raw 32-byte Ed25519 public key).hexdigest()[:16]",
+  "keys": [
+    {
+      "kid": "933cf14c4662cc7e",
+      "alg": "Ed25519",
+      "added": "2026-06-19",
+      "status": "active",
+      "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAHPaJgH2/PR4h988XlHX1zz9p0kTTj/rdMFc5zfcXjJo=\n-----END PUBLIC KEY-----\n"
+    }
+  ]
+}
