@@ -1,0 +1,70 @@
+{
+  "schema": "ovl.attestation.v1",
+  "issuer": "SAGE \u2014 IFP Norge (NO 20251414)",
+  "issued_at": "2026-06-20T10:00:07.106211+00:00",
+  "claim": {
+    "producer_id": "x402-test-agent",
+    "output_id": "demo-forecast-001",
+    "operation": "forecast",
+    "consumed_signal": true,
+    "realized_signal": "EFFECT",
+    "value_def": "beats_baseline",
+    "meta": {
+      "accuracy": 0.8,
+      "persistence": 0.4,
+      "anti_persistence": 0.6,
+      "n": 200
+    }
+  },
+  "value_def": "beats_baseline",
+  "anchor_obtained": false,
+  "verdict": {
+    "consumed": "READ",
+    "realized": "EFFECT",
+    "valued": "PASS",
+    "independence": "WEAK"
+  },
+  "content_hash": "47c3b4248d820d7556ac64787a20d907b324f9bb5b31bc7e28831b50d2dc9647",
+  "re_derivation": "recompute ovl.engine.evaluate(claim, value_def); if anchor_obtained is false and independence==STRONG, cap to WEAK; then hash {claim,verdict,value_def,anchor_obtained} == content_hash",
+  "independence_note": "independence capped STRONG->WEAK: caller-submitted evidence; SAGE did not independently obtain the anchor (value-def declared STRONG)",
+  "mandate": {
+    "sub": "client:demo-key",
+    "scope": "attest:write energy:read",
+    "jti": "mandate-demo-0001",
+    "exp": 1781000000,
+    "budget": {
+      "max_amount": 0.2,
+      "unit": "usd",
+      "asset": "USDC"
+    },
+    "service_tier": "OAUTH",
+    "mandate_hash": "3e69623dff09d9fb66e0186612e24612fcf6104c1b201892b020bf65fcee264f",
+    "status": "REFERENCED_UNVERIFIED"
+  },
+  "signature": {
+    "alg": "Ed25519",
+    "kid": "933cf14c4662cc7e",
+    "sig": "gYpDgmfVDNJTsE81aOp4mPDxrGz+453BYuYeHuxJdEOm/ficHb75Eerm4pISno1yVavrs+mfHQIb71tY7x/MCA==",
+    "signed_envelope": {
+      "content_hash": "47c3b4248d820d7556ac64787a20d907b324f9bb5b31bc7e28831b50d2dc9647",
+      "schema": "ovl.attestation.v1",
+      "issued_at": "2026-06-20T10:00:07.106211+00:00",
+      "ovl_ledger": null,
+      "mandate": {
+        "sub": "client:demo-key",
+        "scope": "attest:write energy:read",
+        "jti": "mandate-demo-0001",
+        "exp": 1781000000,
+        "budget": {
+          "max_amount": 0.2,
+          "unit": "usd",
+          "asset": "USDC"
+        },
+        "service_tier": "OAUTH",
+        "mandate_hash": "3e69623dff09d9fb66e0186612e24612fcf6104c1b201892b020bf65fcee264f",
+        "status": "REFERENCED_UNVERIFIED"
+      },
+      "issuer_key_id": "933cf14c4662cc7e"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "ovl.attestation.v1",
+  "issuer": "SAGE \u2014 IFP Norge (NO 20251414)",
+  "issued_at": "2026-06-19T17:34:57.428998+00:00",
+  "claim": {
+    "producer_id": "x402-test-agent",
+    "output_id": "demo-forecast-001",
+    "operation": "forecast",
+    "consumed_signal": true,
+    "realized_signal": "EFFECT",
+    "value_def": "beats_baseline",
+    "meta": {
+      "accuracy": 0.8,
+      "persistence": 0.4,
+      "anti_persistence": 0.6,
+      "n": 200
+    }
+  },
+  "value_def": "beats_baseline",
+  "anchor_obtained": false,
+  "verdict": {
+    "consumed": "READ",
+    "realized": "EFFECT",
+    "valued": "PASS",
+    "independence": "WEAK"
+  },
+  "content_hash": "47c3b4248d820d7556ac64787a20d907b324f9bb5b31bc7e28831b50d2dc9647",
+  "re_derivation": "recompute ovl.engine.evaluate(claim, value_def); if anchor_obtained is false and independence==STRONG, cap to WEAK; then hash {claim,verdict,value_def,anchor_obtained} == content_hash",
+  "independence_note": "independence capped STRONG->WEAK: caller-submitted evidence; SAGE did not independently obtain the anchor (value-def declared STRONG)",
+  "signature": {
+    "alg": "Ed25519",
+    "kid": "933cf14c4662cc7e",
+    "sig": "4A0LyB7ymZzbbB7mPDDwqdtDVzyS1SgugXzBHpjyURPg1UHrrKB2FMtyDglucD+g0gzdrzYrxi5fK9vA0RewDg==",
+    "signed_envelope": {
+      "content_hash": "47c3b4248d820d7556ac64787a20d907b324f9bb5b31bc7e28831b50d2dc9647",
+      "schema": "ovl.attestation.v1",
+      "issued_at": "2026-06-19T17:34:57.428998+00:00",
+      "ovl_ledger": null,
+      "issuer_key_id": "933cf14c4662cc7e"
+    }
+  }
+}

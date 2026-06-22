@@ -1,0 +1,184 @@
+[
+  {
+    "name": "pass_capped",
+    "claim": {
+      "producer_id": "x402-test-agent",
+      "output_id": "demo-forecast-001",
+      "operation": "forecast",
+      "consumed_signal": true,
+      "realized_signal": "EFFECT",
+      "value_def": "beats_baseline",
+      "meta": {
+        "accuracy": 0.8,
+        "persistence": 0.4,
+        "anti_persistence": 0.6,
+        "n": 200
+      }
+    },
+    "value_def": "beats_baseline",
+    "anchor_obtained": false,
+    "verdict": {
+      "consumed": "READ",
+      "realized": "EFFECT",
+      "valued": "PASS",
+      "independence": "WEAK"
+    },
+    "content_hash": "47c3b4248d820d7556ac64787a20d907b324f9bb5b31bc7e28831b50d2dc9647"
+  },
+  {
+    "name": "pass_anchored",
+    "claim": {
+      "producer_id": "x402-test-agent",
+      "output_id": "demo-forecast-001",
+      "operation": "forecast",
+      "consumed_signal": true,
+      "realized_signal": "EFFECT",
+      "value_def": "beats_baseline",
+      "meta": {
+        "accuracy": 0.8,
+        "persistence": 0.4,
+        "anti_persistence": 0.6,
+        "n": 200
+      }
+    },
+    "value_def": "beats_baseline",
+    "anchor_obtained": true,
+    "verdict": {
+      "consumed": "READ",
+      "realized": "EFFECT",
+      "valued": "PASS",
+      "independence": "STRONG"
+    },
+    "content_hash": "3d3824349cc70a283adb544f26ca0159b9007a847d1573838ade5138438759fc"
+  },
+  {
+    "name": "fail_capped",
+    "claim": {
+      "producer_id": "x402-test-agent",
+      "output_id": "demo-forecast-001",
+      "operation": "forecast",
+      "consumed_signal": true,
+      "realized_signal": "EFFECT",
+      "value_def": "beats_baseline",
+      "meta": {
+        "accuracy": 0.55,
+        "persistence": 0.4,
+        "anti_persistence": 0.6,
+        "n": 200
+      }
+    },
+    "value_def": "beats_baseline",
+    "anchor_obtained": false,
+    "verdict": {
+      "consumed": "READ",
+      "realized": "EFFECT",
+      "valued": "FAIL",
+      "independence": "WEAK"
+    },
+    "content_hash": "bfc8a62f9b8024403330e17426b738c969d675f05d1f677599f0805c68ec9166"
+  },
+  {
+    "name": "indeterminate_lowN",
+    "claim": {
+      "producer_id": "x402-test-agent",
+      "output_id": "demo-forecast-001",
+      "operation": "forecast",
+      "consumed_signal": true,
+      "realized_signal": "EFFECT",
+      "value_def": "beats_baseline",
+      "meta": {
+        "accuracy": 0.8,
+        "persistence": 0.4,
+        "anti_persistence": 0.6,
+        "n": 10
+      }
+    },
+    "value_def": "beats_baseline",
+    "anchor_obtained": false,
+    "verdict": {
+      "consumed": "READ",
+      "realized": "EFFECT",
+      "valued": "INDETERMINATE",
+      "independence": "WEAK"
+    },
+    "content_hash": "7f22e0714854aa89de7aa2a496dc0b8bf9e30ec7d3f942e7d1dc999b36a0bdff"
+  },
+  {
+    "name": "consumption_weak",
+    "claim": {
+      "producer_id": "x402-test-agent",
+      "output_id": "demo-forecast-001",
+      "operation": "forecast",
+      "consumed_signal": true,
+      "realized_signal": "EFFECT",
+      "value_def": "consumption",
+      "meta": {
+        "accuracy": 0.8,
+        "persistence": 0.4,
+        "anti_persistence": 0.6,
+        "n": 200
+      }
+    },
+    "value_def": "consumption",
+    "anchor_obtained": false,
+    "verdict": {
+      "consumed": "READ",
+      "realized": "EFFECT",
+      "valued": "INDETERMINATE",
+      "independence": "WEAK"
+    },
+    "content_hash": "1b98b2d47ae7d626497474b0a456c5fbf35abf78041274bf3288fc4c62786db6"
+  },
+  {
+    "name": "l1_unread",
+    "claim": {
+      "producer_id": "x402-test-agent",
+      "output_id": "demo-forecast-001",
+      "operation": "forecast",
+      "consumed_signal": false,
+      "realized_signal": "EFFECT",
+      "value_def": "beats_baseline",
+      "meta": {
+        "accuracy": 0.8,
+        "persistence": 0.4,
+        "anti_persistence": 0.6,
+        "n": 200
+      }
+    },
+    "value_def": "beats_baseline",
+    "anchor_obtained": false,
+    "verdict": {
+      "consumed": "UNREAD",
+      "realized": "NO_OP",
+      "valued": "SKIPPED",
+      "independence": "NONE"
+    },
+    "content_hash": "fbd337f8c66817f85ce9739713db1ed7d79ee89f498644ef0840c775298e32c1"
+  },
+  {
+    "name": "l2_not_effect",
+    "claim": {
+      "producer_id": "x402-test-agent",
+      "output_id": "demo-forecast-001",
+      "operation": "forecast",
+      "consumed_signal": true,
+      "realized_signal": "FAILED",
+      "value_def": "beats_baseline",
+      "meta": {
+        "accuracy": 0.8,
+        "persistence": 0.4,
+        "anti_persistence": 0.6,
+        "n": 200
+      }
+    },
+    "value_def": "beats_baseline",
+    "anchor_obtained": false,
+    "verdict": {
+      "consumed": "READ",
+      "realized": "FAILED",
+      "valued": "SKIPPED",
+      "independence": "NONE"
+    },
+    "content_hash": "d6e04424c5e438210445d10b99b66780b84df1e2e196c29460f44d34436d545f"
+  }
+]
