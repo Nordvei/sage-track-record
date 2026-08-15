@@ -46255,3 +46255,5 @@ date,zone,price_change,baseline_price,actual_price,source,resolved_at,prediction
 2026-08-09,NO1,-6.86,123.17,116.31,Nord Pool,2026-08-09 03:49:23,7e9acd23-cade-4039-a014-671fa785fff7
 2026-08-09,NO1,-10.37,123.17,112.8,Nord Pool,2026-08-09 04:52:04,f150eaac-0ef3-40f0-a2d6-d5afd6be9fbf
 2026-08-09,NO1,0.19,0.55,0.74,Nord Pool,2026-08-09 11:09:23,72dd0b3e-a588-41dd-9f7b-3c60ef9bde8a
+2026-08-15,NO1,-3.25,134.84,131.59,Nord Pool,2026-08-15 05:30:06,5bb525ec-0f4a-489f-b3a9-28068ebe739a
+2026-08-15,NO1,-3.52,132.79,129.27,Nord Pool,2026-08-15 06:32:59,3a62d0f1-0ca7-4144-8699-61a9eabee67a
