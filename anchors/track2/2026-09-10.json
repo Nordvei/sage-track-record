@@ -1,0 +1,19 @@
+{
+  "artifact": "track2_chain_anchor_v1",
+  "utc_day": "2026-09-10",
+  "generated_at_utc": "2026-09-10T12:00:02.506704Z",
+  "ledger_db": "execution_ledger.db",
+  "chain_row_count": 26262,
+  "max_seq": 26262,
+  "chain_head_hash": "6ccb8034c5f118d1a247f6d7e571a3b29808c3bc24f85d14d19b0fa364ae0d75",
+  "merkle_root_sha256": "0379ccc6fa7653190f448d313543f7b5d611d8ad6005aa18a4d8e089365a3fe1",
+  "previous_anchor_sha256": "7e2ecd950ff2a0b7401963cc23ca363ff9c1c5f7d16be60f4a4e851781e3bc12",
+  "previous_anchor_file": "2026-09-09.json",
+  "code_commit": "6f07afa613291bf57be6a35e52b7051c6827b479",
+  "algorithm": {
+    "leaves": "ledger_hash_chain.row_hash hex, seq ASC, full-chain prefix 1..max_seq",
+    "merkle": "anchoring/merkle.py compute_merkle_root \u2014 Bitcoin-style sha256(left||right), duplicate-last on odd, '0'*64 empty sentinel",
+    "row_hash": "sha256(ascii(prev_hash) || canonical_payload_utf8) [anchoring/hash_chain.py]"
+  },
+  "trust_bound": "v1: committed+pushed to public github.com/Nordvei/sage-track-record (operator-controlled remote). Defends against on-box tampering; NOT trustless. Upgrade path: OpenTimestamps / RFC3161 / Rekor / independent-operator witness."
+}
