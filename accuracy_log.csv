@@ -1,10 +1,10 @@
 zone,period_type,period_label,total,correct,accuracy_pct
-NO1,lifetime,lifetime,11867,7652,64.48
-NO2,lifetime,lifetime,9746,6197,63.59
-NO3,lifetime,lifetime,9528,6175,64.81
-NO4,lifetime,lifetime,9392,5525,58.83
-NO5,lifetime,lifetime,8990,6112,67.99
-ALL,lifetime,lifetime,49523,31661,63.93
+NO1,lifetime,lifetime,11870,7654,64.48
+NO2,lifetime,lifetime,9749,6199,63.59
+NO3,lifetime,lifetime,9531,6177,64.81
+NO4,lifetime,lifetime,9395,5527,58.83
+NO5,lifetime,lifetime,8993,6114,67.99
+ALL,lifetime,lifetime,49538,31671,63.93
 NO1,month,2026-01,1577,886,56.18
 NO2,month,2026-01,1242,724,58.29
 NO3,month,2026-01,1241,690,55.6
@@ -50,6 +50,11 @@ NO2,month,2026-09,541,263,48.61
 NO3,month,2026-09,497,268,53.92
 NO4,month,2026-09,566,276,48.76
 NO5,month,2026-09,269,152,56.51
+NO1,month,2026-10,3,2,66.67
+NO2,month,2026-10,3,2,66.67
+NO3,month,2026-10,3,2,66.67
+NO4,month,2026-10,3,2,66.67
+NO5,month,2026-10,3,2,66.67
 NO1,week,2026-W27,9,8,88.89
 NO3,week,2026-W27,5,5,100.0
 NO4,week,2026-W27,8,0,0.0
@@ -100,3 +105,8 @@ NO2,week,2026-W38,25,12,48.0
 NO3,week,2026-W38,20,14,70.0
 NO4,week,2026-W38,14,7,50.0
 NO5,week,2026-W38,36,22,61.11
+NO1,week,2026-W39,3,2,66.67
+NO2,week,2026-W39,3,2,66.67
+NO3,week,2026-W39,3,2,66.67
+NO4,week,2026-W39,3,2,66.67
+NO5,week,2026-W39,3,2,66.67
